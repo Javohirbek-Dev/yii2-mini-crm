@@ -1,4 +1,9 @@
-<p align="center">
+запуск проекта
+1 composer install
+2 php init
+3 php yii migrate
+4 php yii migrate --migrationPath=@yii/rbac/migrations
+5 php yii rbac/init<p align="center">
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
@@ -30,22 +35,7 @@ DIRECTORY STRUCTURE
 запуск проекта
 1 composer install
 2 php init
-3 windows: yii migrate
-  ubuntu:  php yii migrate
-4 windows: yii migrate --migrationPath=@yii/rbac/migrations
-  ubuntu: php yii migrate --migrationPath=@yii/rbac/migrations
-  
-5 windows: yii rbac/init
-  ubuntu:  php yii rbac/init
-  
-  
-6   проект был сделан на backend части yii2 friendworki
-    .htaccess для пользователей apachi
-    Те, кто использует nginx, могут указать на простату бакканд
-    
-5   Для письменной базы данных миграции здесь,
-    на всякий случай закинул базу sql(yii2_bron.sql) в проект
-    
-
-
+3 php yii migrate
+4 php yii migrate --migrationPath=@yii/rbac/migrations
+5 php yii rbac/init
 ```
