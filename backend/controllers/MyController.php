@@ -26,10 +26,10 @@ class MyController extends \yii\web\Controller
                         'roles' => ['@'],
                     ],
                     [
-                        'controllers' => ['site'],
-                        'actions' => ['index'],
+                        'controllers' => ['site', 'applications'],
+                        'actions' => ['index', 'create', 'update', 'delete', 'view', 'send'],
                         'allow' => true,
-                        'roles' => ['Admin', 'Drektor', 'User'],
+                        'roles' => ['Admin', 'Drektor'],
                     ],
                     [
                         'controllers' => ['users', 'applications'],
