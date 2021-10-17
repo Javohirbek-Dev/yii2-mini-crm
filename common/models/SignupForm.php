@@ -35,7 +35,7 @@ class SignupForm extends \yii\db\ActiveRecord
             ['email', 'email'],
             [['status'], 'integer'],
             [['email', 'rule'], 'string', 'max' => 255],
-//            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
+            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
             ['password', 'required'],
         ];
     }
